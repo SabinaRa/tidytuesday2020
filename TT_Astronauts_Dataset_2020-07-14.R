@@ -44,7 +44,9 @@ anndata
 p + geom_text(data = anndata, aes(label = name), x = 1960, y = 32, parse = TRUE, hjust = 0, size=3) +  
   geom_curve( data = anndata, x = 1965, y = 27, xend = 1963, yend = 3,  curvature = .3, arrow = arrow(length = unit(2, "mm")))
 
+print(p)
 
+#Saving
 ggsave("TT2020-07-04_astronauts.png")
 
 

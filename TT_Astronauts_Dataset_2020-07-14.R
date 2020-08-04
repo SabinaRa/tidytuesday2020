@@ -32,7 +32,7 @@ p <- ggplot(astronauts_g_mc, aes(year_of_mission, n)) +
   geom_bar(data=astronauts_by_year, stat="identity", fill="grey", alpha = 0.6, width = 0.7) + 
   geom_bar(stat="identity", fill = "#c70000", width = 0.7) + facet_grid( military_civilian ~ sex) + xlab("Year of mission") + 
   mdthemes::md_theme_minimal() + 
-  labs(title = "Number of space travelers in missions from 1961 till 2019 by <span style=color:#c70000>**gender**</span> and <span style=color:#c70000>**status**</span><br>(military or civilian)", subtitle = "TidyTuesday 2020-07-14", caption = "Data source: Mariya Stavnichuk and Tatsuya Corlett article<br>Data preparation: Georgios Karamanis<br> Visualization: Sabina Rako") 
+  labs(title = "Number of space travelers in missions from 1961 till 2019 by <span style=color:#c70000>**gender**</span> and <span style=color:#c70000>**status**</span><br>(military or civilian)", subtitle = "TidyTuesday 2020-07-14", caption = "Data source: Mariya Stavnichuk and Tatsuya Corlett article<br>Data preparation: Georgios Karamanis) 
 
 print(p)
 
